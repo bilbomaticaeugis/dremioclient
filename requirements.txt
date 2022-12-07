@@ -4,3 +4,4 @@ confuse==1.4.0
 requests>=2.21.0
 simplejson==3.17.3
 six==1.16.0
+pyarrow=10.0.1
