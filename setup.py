@@ -29,11 +29,11 @@
 from setuptools import find_packages, setup
 
 
-requirements = ["Click>=6.0", "requests>=2.21.0", "confuse", "simplejson", "attrs", "six"]
+requirements = ["Click>=6.0", "requests>=2.21.0", "pyarrow", "confuse", "simplejson", "attrs", "six"]
 
 requirements_noarrow = ["pandas>=0.24.2", "requests-futures==1.0.0", "markdown"]
 
-requirements_full = ["pyarrow>=0.15.0", "pandas>=0.24.2", "requests-futures==1.0.0", "markdown"]
+requirements_full = ["pyarrow", "pandas>=0.24.2", "requests-futures==1.0.0", "markdown"]
 
 setup_requirements = []
 
@@ -83,5 +83,5 @@ setup(
         "full": requirements_full,
         "noarrow": requirements_noarrow,
     },
-    entry_points={"console_scripts": ["dremio_client_eea=dremio_client.cli:cli"]},
+    entry_points={"console_scripts": ["dremio_client_eea=dremio_client_eea.cli:cli"]},
 )
