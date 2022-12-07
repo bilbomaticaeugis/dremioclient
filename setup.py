@@ -29,11 +29,6 @@
 from setuptools import find_packages, setup
 
 
-with open("README.rst") as readme_file:
-    readme = readme_file.read()
-
-with open("HISTORY.rst") as history_file:
-    history = history_file.read()
 
 requirements = ["Click>=6.0", "requests>=2.21.0", "confuse", "simplejson", "attrs", "six"]
 
@@ -46,8 +41,8 @@ setup_requirements = []
 test_requirements = []
 
 setup(
-    author="Ryan Murray",
-    author_email="rymurr@gmail.com",
+    author="Bilbomatica",
+    author_email="oesparza@bilbomatica.es",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
@@ -61,13 +56,13 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
-    description="Python client for Dremio. See https://dremio.com",
+    description="Python client for Dremio with fixed flight connector  . See https://dremio.com",
     install_requires=requirements,
     license="Apache Software License 2.0",
     long_description=readme + "\n\n" + history,
     include_package_data=True,
-    keywords="dremio_client",
-    name="dremio_client",
+    keywords="dremio_client_eea",
+    name="dremio_client_eea",
     packages=find_packages(
         include=[
             "dremio_client",
@@ -81,8 +76,8 @@ setup(
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/rymurr/dremio_client",
-    version="0.14.0",
+    url="https://github.com/bilbomaticaeugis/dremioclient",
+    version="0.1.0",
     zip_safe=False,
     extras_require={
         ':python_version == "2.7"': ["futures"],
