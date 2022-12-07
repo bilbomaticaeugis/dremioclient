@@ -29,7 +29,6 @@
 from setuptools import find_packages, setup
 
 
-
 requirements = ["Click>=6.0", "requests>=2.21.0", "confuse", "simplejson", "attrs", "six"]
 
 requirements_noarrow = ["pandas>=0.24.2", "requests-futures==1.0.0", "markdown"]
@@ -65,12 +64,12 @@ setup(
     name="dremio_client_eea",
     packages=find_packages(
         include=[
-            "dremio_client",
-            "dremio_client.flight",
-            "dremio_client.auth",
-            "dremio_client.model",
-            "dremio_client.util",
-            "dremio_client.conf",
+            "dremio_client_eea",
+            "dremio_client_eea.flight",
+            "dremio_client_eea.auth",
+            "dremio_client_eea.model",
+            "dremio_client_eea.util",
+            "dremio_client_eea.conf",
         ]
     ),
     setup_requires=setup_requirements,
@@ -84,5 +83,5 @@ setup(
         "full": requirements_full,
         "noarrow": requirements_noarrow,
     },
-    entry_points={"console_scripts": ["dremio_client=dremio_client.cli:cli"]},
+    entry_points={"console_scripts": ["dremio_client_eea=dremio_client.cli:cli"]},
 )
