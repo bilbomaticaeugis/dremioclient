@@ -59,7 +59,7 @@ setup(
     description="Python client for Dremio with fixed flight connector  . See https://dremio.com",
     install_requires=requirements,
     license="Apache Software License 2.0",
-    long_description=readme + "\n\n" + history,
+    long_description="",
     include_package_data=True,
     keywords="dremio_client_eea",
     name="dremio_client_eea",
